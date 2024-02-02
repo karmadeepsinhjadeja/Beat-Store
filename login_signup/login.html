@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./2.css">
+    <style>
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            margin: 0;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            font-family: 'Bebas Neue';
+            letter-spacing: 0.025em;
+        }
+        
+        .logo span {
+            color: red;
+            font-weight: lighter;
+            margin: 0;
+            padding-left: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-box">
+            <div class="headding">
+                <h2 class="logo">TheCherry<span>Beats</span></h2>
+            </div>
+            <div class="col">
+                <label for="lName">Email</label><br>
+                <input type="email" id="lName" placeholder="Enter Your Email">
+            </div>
+            <div class="col">
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass" placeholder="Create Password">
+            </div>
+            <div class="col">
+                <input type="checkbox" style="width: auto;" onclick="showPass()">Show password
+            </div>
+            <div class="col_2">
+                <div class="login">
+                    <p>Create an account? <a href="./signup.html" style="color: red; text-decoration:none">Signup</a></p>
+                </div>
+                <div class="signup">
+                    <button class="signup-btn">
+                    <a href="./LoginSignUp/login.html" style=" text-decoration: none;
+                    color: #fff">Login</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showPass() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

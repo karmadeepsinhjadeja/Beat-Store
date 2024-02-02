@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./1.css">
+    <style>
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            margin: 0;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            font-family: 'Bebas Neue';
+            letter-spacing: 0.025em;
+        }
+        
+        .logo span {
+            color: red;
+            font-weight: lighter;
+            margin: 0;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-box">
+            <div class="headding">
+                <h2 class="logo">TheCherry<span>Beats</span></h2>
+
+            </div>
+            <div class="col_2">
+                <div class="firstName">
+                    <label for="fName">First Name</label><br>
+                    <input type="text" id="fName" placeholder="Enter Your First Name">
+                </div>
+                <div class="lastName">
+                    <label for="lName">Last Name</label><br>
+                    <input type="text" id="lName" placeholder="Enter Your Last Name">
+                </div>
+            </div>
+            <div class="col">
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" placeholder="Enter Your Email">
+            </div>
+            <div class="col">
+                <label for="pass">Create Password</label><br>
+                <input type="password" id="pass" placeholder="Create Password">
+            </div>
+            <div class="col">
+                <label for="cpass">Confirm Password</label><br>
+                <input type="password" id="cpass" placeholder="Confirm Password">
+            </div>
+            <div class="col_2">
+                <div class="login">
+                    <p>Already have a account? <a href="./login.html" style="color: red; text-decoration:none">Login</a></p>
+                </div>
+                <div class="signup">
+                    <button class="signup-btn" onclick="confirmPass()">
+                        <a href="#" style=" text-decoration: none;
+                        color: #fff" >Signup</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function confirmPass() {
+            var x = document.getElementById("pass").value;
+            var y = document.getElementById("cpass").value;
+            if (x != y) {
+                alert("passwords are not same");
+            } else {}
+        }
+    </script>
+</body>
+
+</html>
